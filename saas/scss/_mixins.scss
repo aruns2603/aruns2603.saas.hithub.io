@@ -1,0 +1,20 @@
+// Mixin for Flexbox container
+@mixin flex-center($direction: row, $align: center, $justify: center) {
+    display: flex;
+    flex-direction: $direction;
+    align-items: $align;
+    justify-content: $justify;
+  }
+  
+  // Mixin for responsive font-size
+  @mixin responsive-font($size) {
+    font-size: $size;
+    @media screen and (max-width: 768px) {
+      font-size: $size * 0.8;
+    }
+  }
+  
+  // Mixin for rounded corners
+  @mixin rounded($radius: 5px) {
+    border-radius: $radius;
+  }

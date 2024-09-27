@@ -1,0 +1,16 @@
+// Extendable styles
+%card {
+    border: 1px solid #ccc;
+    padding: 15px;
+    @include rounded(10px);
+  }
+  
+  // Extend for movie card and genre card
+  .movie-card {
+    @extend %card;
+  }
+  
+  .genre-card {
+    @extend %card;
+    background-color: $secondary-color;
+  }

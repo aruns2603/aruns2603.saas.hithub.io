@@ -1,0 +1,33 @@
+// Movie card component with nested rules
+.movie-card {
+    @include flex-center(column);
+    background-color: $primary-color;
+    padding: 20px;
+    color: $text-color;
+    width: 250px;
+    @include rounded(10px);
+  
+    .movie-title {
+      @include responsive-font($font-large);
+      margin-bottom: 10px;
+    }
+  
+    .movie-genre {
+      @include responsive-font($font-medium);
+      font-weight: bold;
+    }
+  }
+  
+  // Button component with mixins
+  .button {
+    background-color: $button-color;
+    padding: 10px 20px;
+    color: $text-color;
+    border: none;
+    cursor: pointer;
+    @include rounded(5px);
+    
+    &:hover {
+      background-color: darken($button-color, 10%);
+    }
+  }

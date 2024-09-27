@@ -1,0 +1,15 @@
+{
+    "name": "ott-movies-website",
+    "version": "1.0.0",
+    "description": "A simple OTT movies website using SASS for styling.",
+    "main": "index.js",
+    "scripts": {
+      "build-css": "node-sass --output-style expanded scss/main.scss css/style.css --source-map true",
+      "watch-css": "node-sass --output-style expanded scss/main.scss css/style.css --source-map true --watch"
+    },
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+      "node-sass": "^7.0.1"
+    }
+  }
